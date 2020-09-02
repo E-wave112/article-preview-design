@@ -1,0 +1,101 @@
+
+/**css styles**/
+/*<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">*/
+/*@import url('https://fonts.google.com/specimen/Manrope');*/
+
+body {
+      font-size:13px;
+      color:hsl(217, 19%, 35%);
+
+
+}
+@media (min-width:200px){
+    .main-flex{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+    }
+    .second-flex{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+
+    }
+    .share {
+
+        width:25px;
+        height:15px;
+        transform:translateY(85%);
+    
+    
+    }
+    .imago{
+        width:50px;
+        height:50px;
+        border-radius:45%;
+    
+    }
+
+    #trans {
+        transform: translate(45%,-150%);
+    
+    
+    }
+
+    .draw{
+        width:300px;
+    }
+}
+
+@media (min-width:1200px){
+
+    .main-flex{
+        display:flex;
+        flex-direction:row;
+        justify-content:start;
+    }
+
+    .second-flex{
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+
+    }
+    .share {
+
+        width:50px;
+        height:30px;
+        transform:translateY(85%);
+    
+    
+    }
+
+    .imago{
+        width:100px;
+        height:100px;
+        border-radius:48%;
+    
+    }
+
+    #trans {
+        transform: translate(90%,-270%);
+    
+    
+    }
+
+    .draw{
+        width:600px;
+    }
+
+    .ext {
+        width:120%;
+
+    }
+
+    
+
+
+}
+
+
+
