@@ -15,10 +15,10 @@ function popup(){
 }
 
 function fnBuildTopMenu(cIn){
-    var myImg="/images/";
-    var cTemp = "";
-    cTemp = cTemp + "<td><img src=" + myImg +"_icon-facebook.svg></td>";
-    cTemp = cTemp + "<td><img src=" + myImg +"_icon-pinterest></td>";
-    cTemp = cTemp + "<td><img src=" + myImg + "_icon-twitter.svg></td>";
+   // var myImg="/images/";
+   // var cTemp = "";
+   // cTemp = cTemp + "<td><img src=" + myImg +"_icon-facebook.svg></td>";
+   // cTemp = cTemp + "<td><img src=" + myImg +"_icon-pinterest></td>";
+   // cTemp = cTemp + "<td><img src=" + myImg + "_icon-twitter.svg></td>";
    /// cTemp = cTemp + "<td><img src=" + myImg + "_04.jpg></td>";
 }
