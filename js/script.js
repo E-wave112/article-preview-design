@@ -1,24 +1,14 @@
 // the main js code
 
+const shareBtn = document.querySelector(".share-button");
+const mainFlex = document.querySelector(".social-share");
+const Share = document.querySelector(".share");
 
-var pop = document.getElementsByClassName("share");
-pop.innerHTML = "CLICK THE FOLLOWING ICONS TO SHARE";
-function popup(){
+
+
+shareBtn.addEventListener('click',function(){
     
-    var img = document.createElement('img');
-    var images= ["images/icon-facebook.svg","images/icon-pinterest.svg","images/icon-twitter.svg"]
+    mainFlex.classList.toggle("open-social-share");
+    mainFlex.classList.toggle("white");
 
-    for (var i;images.length;i++){
-        img.setAttribute("src",images[i]);
-    }
-    document.getElementById("body").appendChild(img);
-}
-
-function fnBuildTopMenu(cIn){
-    var myImg="/images/";
-    var cTemp = "";
-    cTemp = cTemp + "<td><img src=" + myImg +"_icon-facebook.svg></td>";
-    cTemp = cTemp + "<td><img src=" + myImg +"_icon-pinterest></td>";
-    cTemp = cTemp + "<td><img src=" + myImg + "_icon-twitter.svg></td>";
-   /// cTemp = cTemp + "<td><img src=" + myImg + "_04.jpg></td>";
-}
+})

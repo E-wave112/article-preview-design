@@ -1,15 +1,42 @@
 
 /**css styles**/
-/*<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">*/
+/* <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> */
 /*@import url('https://fonts.google.com/specimen/Manrope');*/
 
+
+:root{
+
+    --background-active-button-body-color:hsl(217, 19%, 35%);
+}
+*,::before,::after{
+    box-sizing:border-box;
+}
 body {
       font-size:13px;
-      color:hsl(217, 19%, 35%);
-
-
+      color:var(--background-active-button-body-color);
 }
-@media (min-width:200px){
+#word{
+    color:hsl(210, 46%, 95%);
+}
+.share-button{
+    border-radius:50%;
+}
+
+.share-button:active {
+    background-color:var(--background-active-button-body-color);
+    /* box-shadow: 0 5px #666; */
+    /* transform: translateY(4px); */
+  }
+
+  .white{
+      
+      background:white;
+  }
+
+
+
+
+@media screen and (min-width:300px){
     .main-flex{
         display:flex;
         flex-direction:column;
@@ -21,14 +48,25 @@ body {
         justify-content:space-between;
 
     }
-    .share {
+    .fimG{
 
-        width:25px;
-        height:15px;
-        transform:translateY(85%);
-    
-    
+        width:100% !important;
+
     }
+    .share{
+
+        width:20px;
+        height:20px;
+        transform:translateY(0%);  
+    }
+
+    /* .share:active { */
+        /* background-color:hsl(210, 46%, 95%) */
+        /* box-shadow: 0 5px #666; */
+        /* transform: translateY(4px); */
+      
+
+    
     .imago{
         width:50px;
         height:50px;
@@ -45,14 +83,36 @@ body {
     .draw{
         width:300px;
     }
+    .social-share{
+        /* position:fixed; */
+        visibility:hidden;
+        display:flex;
+        /* height:114px; */
+        flex-direction:row;
+        justify-content:space-around;
+        background:var(--background-active-button-body-color);
+    }
+
+    .bg-buttton{
+        background:var(--background-active-button-body-color);
+    }
+    
+    .open-social-share{
+    
+        visibility:visible;
+        transform:translateY(-450%);
+        /* height:114px; */
+        width:90%;
+        margin-right:10%;
+    }
 }
 
-@media (min-width:1200px){
+@media screen and (min-width:800px){
 
     .main-flex{
         display:flex;
         flex-direction:row;
-        justify-content:start;
+        justify-content:space-evenly;
     }
 
     .second-flex{
@@ -63,9 +123,9 @@ body {
     }
     .share {
 
-        width:50px;
-        height:30px;
-        transform:translateY(85%);
+        width:40px;
+        height:40px;
+        transform:translateY(0%);
     
     
     }
@@ -92,8 +152,25 @@ body {
 
     }
 
+    .social-share{
+        /* position:fixed; */
+        width:70%;
+        margin:auto;
+        visibility:hidden;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around;
+        background:var(--background-active-button-body-color);
+        
+    }
     
+    .open-social-share{
 
+        visibility:visible;
+        width:50%;
+        margin:auto;
+        transform:translate(110%,-1580%);
+    }
 
 }
 
